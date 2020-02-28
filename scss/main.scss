@@ -1,5 +1,10 @@
 $primary-color: #444;
+$text-secondary:#eece1a;
 
+@mixin easeOut{
+    transition: all 0.5s ease-out;
+
+}
 *{
     box-sizing: $primary-color;
 }
@@ -25,5 +30,33 @@ h3{
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;   
         background: rgba(lighten( $primary-color,2),0.5);
+    }
+}
+
+a{
+    color:#fff ;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    z-index:2;
+    width: 100%;
+
+}
+.text-secondary{
+ color:$text-secondary;
+}
+main{
+    padding: 4rem;
+    height: 100%;
+    .icon{
+        margin-top: 1rem;
+        a{
+            padding: 0.4rem;
+            &:hover{
+                color: $text-secondary;
+                @include easeOut();
+            }
+        }
     }
 }
