@@ -1,5 +1,19 @@
 $primary-color: #ccc;
 
+*{
+    box-sizing: $primary-color;
+}
+
 body{
     background: $primary-color;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+
+h1,h2,h3{
+    margin: 0;
+    font-weight: 400;
 }
